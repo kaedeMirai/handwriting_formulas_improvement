@@ -10,6 +10,8 @@
 
 Лучшая модель: `Qwen/Qwen3-VL-2B-Instruct`, дообученная через LoRA masked SFT на 20,000 примерах из `linxy/LaTeX_OCR`.
 
+### Более детальная информация по результатам эксперементов представлена в report.md
+
 **Лучший результат на test subset `linxy/LaTeX_OCR`, 70 примеров:**
 
 | Модель | Train samples | LoRA rank | CER ↓ | Exact Match ↑ |
