@@ -40,6 +40,20 @@ pip install -r requirements.txt
 
 Если нужен CUDA-вариант PyTorch, установите сборку под вашу версию CUDA перед установкой остальных зависимостей или вместе с ними.
 
+## Checkpoint
+
+Финальный LoRA checkpoint загружен на Hugging Face Hub:
+
+https://huggingface.co/FrankOcien/qwen3vl-latex-lora-20k
+
+скачать:
+
+```bash
+uv run hf download FrankOcien/qwen3vl-latex-lora-20k \
+  --repo-type model \
+  --local-dir checkpoints/qwen3vl_2b_latex_lora_masked_20k
+```
+
 ## Обучение
 
 ```bash
