@@ -11,7 +11,7 @@ from transformers import AutoProcessor, AutoModelForImageTextToText
 from peft import PeftModel
 
 BASE_MODEL_VL = "Qwen/Qwen3-VL-2B-Instruct"
-ADAPTER_PATH = "checkpoints/qwen3vl_2b_latex_lora_masked_20k"
+ADAPTER_PATH = "checkpoints/qwen3vl_2b_latex_lora_ocr_math"
 PROMPT = "Convert the formula in the image to LaTeX. Return only LaTeX."
 
 

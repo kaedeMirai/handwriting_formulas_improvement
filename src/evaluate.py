@@ -8,14 +8,15 @@ from transformers import AutoProcessor, AutoModelForImageTextToText
 from peft import PeftModel
 
 BASE_MODEL_ID = "Qwen/Qwen3-VL-2B-Instruct"
-ADAPTER_PATH = "checkpoints/qwen3vl_2b_latex_lora_masked_20k"
+ADAPTER_PATH = "checkpoints/qwen3vl_2b_latex_ocr_math"
 DATASET_ID = "linxy/LaTeX_OCR"
 PROMPT = "Convert the formula in the image to LaTeX. Return only LaTeX."
 
 MAX_SAMPLES = 70
 MAX_NEW_TOKENS = 384
 
-OUTPUT_JSON = "eval_results_qwen3vl_20k.json"
+OUTPUT_JSON = "eval_results_qwen3vl_2b_latex_ocr_math.json"
+ONE_SHOT = False
 
 
 def levenshtein_distance(a: str, b: str) -> int:
@@ -59,20 +60,40 @@ def cer(prediction: str, target: str) -> float:
     return levenshtein_distance(prediction, target) / len(target)
 
 
-def generate_prediction(model, processor, image):
+def generate_prediction(model, processor, image, demo_image, demo_latex):
     """
     Генерирует LaTeX для одного изображения.
     """
-
-    messages = [
-        {
-            "role": "user",
-            "content": [
-                {"type": "image"},
-                {"type": "text", "text": PROMPT},
-            ],
-        }
-    ]
+    if ONE_SHOT:
+        messages = [
+            {
+                "role": "user",
+                "content": [
+                    {"type": "image"},
+                    {
+                        "type": "text",
+                        "text": (
+                            "Example:\n"
+                            "This image corresponds to the following LaTeX:\n"
+                            f"{demo_latex}\n\n"
+                            "Now convert the next formula image to LaTeX."
+                        ),
+                    },
+                    {"type": "image"},
+                    {"type": "text", "text": PROMPT},
+                ],
+            }
+        ]
+    else:
+        messages = [
+            {
+                "role": "user",
+                "content": [
+                    {"type": "image"},
+                    {"type": "text", "text": PROMPT},
+                ],
+            }
+        ]
 
     text = processor.apply_chat_template(
         messages,
@@ -80,12 +101,20 @@ def generate_prediction(model, processor, image):
         add_generation_prompt=True,
     )
 
-    inputs = processor(
-        text=[text],
-        images=[image],
-        padding=True,
-        return_tensors="pt",
-    )
+    if ONE_SHOT:
+        inputs = processor(
+            text=[text],
+            images=[[demo_image, image]],
+            padding=True,
+            return_tensors="pt",
+        )
+    else:
+        inputs = processor(
+            text=[text],
+            images=[image],
+            padding=True,
+            return_tensors="pt",
+        )
 
     inputs = {k: v.to(model.device) for k, v in inputs.items()}
 
@@ -122,6 +151,11 @@ def main():
     else:
         test_dataset = dataset["train"].select(range(MAX_SAMPLES))
 
+    train_dataset = dataset["train"]
+    demo_example = train_dataset[0]
+    demo_image = demo_example["image"].convert("RGB")
+    demo_latex = demo_example["text"].strip()
+
     print(f"Eval samples: {len(test_dataset)}")
 
     print("Loading processor...")
@@ -142,7 +176,10 @@ def main():
     base_model.config.pad_token_id = processor.tokenizer.pad_token_id
 
     print("Loading LoRA adapter...")
-    model = PeftModel.from_pretrained(base_model, ADAPTER_PATH)
+    if ONE_SHOT:
+        model = base_model
+    else:
+        model = PeftModel.from_pretrained(base_model, ADAPTER_PATH)
     model.eval()
 
     rows = []
@@ -154,7 +191,9 @@ def main():
         image = example["image"].convert("RGB")
         target = example["text"].strip()
 
-        prediction = generate_prediction(model, processor, image)
+        prediction = generate_prediction(
+            model, processor, image, demo_image, demo_latex
+        )
 
         sample_cer = cer(prediction, target)
 

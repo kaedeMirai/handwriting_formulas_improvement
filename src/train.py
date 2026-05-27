@@ -1,5 +1,5 @@
 import torch
-from datasets import load_dataset
+from datasets import load_dataset, concatenate_datasets
 from transformers import (
     AutoProcessor,
     AutoModelForImageTextToText,
@@ -10,8 +10,9 @@ from peft import LoraConfig, get_peft_model
 
 MODEL_VL = "Qwen/Qwen3-VL-2B-Instruct"
 DATASET_OCR = "linxy/LaTeX_OCR"
-OUTPUT_DIR = "checkpoints/qwen3vl_2b_latex_lora_masked_20k"
-TRAIN_SAMPLES = 20000
+DATASET_MATHWRITING = "deepcopy/MathWriting-human"
+OUTPUT_DIR = "checkpoints/qwen3vl_2b_latex_lora_ocr_math"
+TRAIN_SAMPLES = 10000
 PROMPT = "Convert the formula in the image to LaTeX. Return only LaTeX."
 
 
@@ -107,11 +108,26 @@ def main():
     print("Loading dataset...")
     dataset = load_dataset(DATASET_OCR)
 
-    train_dataset = dataset["train"]
+    train_dataset_ocr = dataset["train"]
 
-    train_dataset = train_dataset.shuffle(seed=42).select(range(TRAIN_SAMPLES))
+    train_dataset = train_dataset_ocr.shuffle(seed=42).select(range(TRAIN_SAMPLES))
+    print(f"Train samples ocr: {len(train_dataset)}")
 
-    print(f"Train samples: {len(train_dataset)}")
+    dataset_math = load_dataset(DATASET_MATHWRITING)
+    train_dataset_math = (
+        dataset_math["train"].shuffle(seed=42).select(range(int(TRAIN_SAMPLES * 0.25)))
+    )
+
+    print(f"Train samples math: {len(train_dataset_math)}")
+
+    train_dataset = concatenate_datasets(
+        [
+            train_dataset_ocr,
+            train_dataset_math,
+        ]
+    )
+    train_dataset = train_dataset.shuffle(seed=42)
+    print(f"Total train samples: {len(train_dataset)}")
 
     print("Loading processor...")
     processor = AutoProcessor.from_pretrained(

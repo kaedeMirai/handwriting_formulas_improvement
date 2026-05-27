@@ -46,14 +46,14 @@ pip install -r requirements.txt
 
 Финальный LoRA checkpoint загружен на Hugging Face Hub:
 
-https://huggingface.co/FrankOcien/qwen3vl-latex-lora-20k
+https://huggingface.co/FrankOcien/qwen3vl_2b_latex_lora_ocr_math
 
 скачать:
 
 ```bash
-uv run hf download FrankOcien/qwen3vl-latex-lora-20k \
+uv run hf download FrankOcien/qwen3vl_2b_latex_lora_ocr_math \
   --repo-type model \
-  --local-dir checkpoints/qwen3vl_2b_latex_lora_masked_20k
+  --local-dir checkpoints/qwen3vl_2b_latex_lora_ocr_math
 ```
 
 ## Обучение

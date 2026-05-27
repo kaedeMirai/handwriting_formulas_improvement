@@ -1,0 +1,500 @@
+{
+  "metrics": {
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "num_samples": 70,
+    "mean_cer": 0.13380183757014874,
+    "exact_match": 0.0
+  },
+  "samples": [
+    {
+      "idx": 0,
+      "target": "d s ^ { 2 } = ( 1 - { \\frac { q c o s \\theta } { r } } ) ^ { \\frac { 2 } { 1 + \\alpha ^ { 2 } } } \\lbrace d r ^ { 2 } + r ^ { 2 } d \\theta ^ { 2 } + r ^ { 2 } s i n ^ { 2 } \\theta d \\varphi ^ { 2 } \\rbrace - { \\frac { d t ^ { 2 } } { ( 1 - { \\frac { q c o s \\theta } { r } } ) ^ { \\frac { 2 } { 1 + \\alpha ^ { 2 } } } } } .",
+      "prediction": " $$d s ^ { 2 } = ( 1 - \\frac { q \\cos \\theta } { r } ) ^ { \\frac { 2 } { 1 + \\alpha } } \\{ d r ^ { 2 } + r ^ { 2 } d \\theta ^ { 2 } + r ^ { 2 } \\sin ^ { 2 } \\theta d \\varphi ^ { 2 } \\} - \\frac { d t ^ { 2 } } { ( 1 - \\frac { q \\cos \\theta } { r } ) ^ { \\frac { 2 } { 1 + \\alpha } } } .$$",
+      "cer": 0.16408668730650156,
+      "exact_match": 0
+    },
+    {
+      "idx": 1,
+      "target": "\\widetilde \\gamma _ { \\mathrm { h o p f } } \\simeq \\sum _ { n > 0 } \\widetilde { G } _ { n } { \\frac { ( - a ) ^ { n } } { 2 ^ { 2 n - 1 } } }",
+      "prediction": "$$\\widetilde{\\gamma } _ { \\mathrm { h o p } f } \\simeq \\sum _ { n > 0 } \\widetilde { G } _ { n } \\frac { ( - a ) ^ { n } } { 2 ^ { 2 n - 1 } }$$",
+      "cer": 0.07746478873239436,
+      "exact_match": 0
+    },
+    {
+      "idx": 2,
+      "target": "\\rho _ { L } ( q ) = \\sum _ { m = 1 } ^ { L } \\ P _ { L } ( m ) \\ { \\frac { 1 } { q ^ { m - 1 } } } .",
+      "prediction": " $$\\rho _ { L } ( q ) = \\sum _ { m = 1 } ^ { L } P _ { L } ( m ) \\, \\frac { 1 } { q ^ { m - 1 } } .$$",
+      "cer": 0.09900990099009901,
+      "exact_match": 0
+    },
+    {
+      "idx": 3,
+      "target": "{ \\frac { d ^ { 2 } \\varphi } { d \\tau ^ { 2 } } } = \\sin \\varphi \\ ,",
+      "prediction": " $$\\frac { d ^ { 2 } \\varphi } { d \\tau ^ { 2 } } = \\sin \\varphi \\, ,$$",
+      "cer": 0.11594202898550725,
+      "exact_match": 0
+    },
+    {
+      "idx": 4,
+      "target": "| t _ { i , j } | ^ { 2 } \\leq t _ { i , i } t _ { j , j } , t _ { i , i } > 0 \\forall i , j",
+      "prediction": " $$| t _ { i , j } | ^ { 2 } \\leq t _ { i , i } t _ { j , j } , t _ { i , i } > 0 \\forall i , j$$",
+      "cer": 0.05434782608695652,
+      "exact_match": 0
+    },
+    {
+      "idx": 5,
+      "target": "s + t + u = - \\frac { 8 } { \\alpha ^ { \\prime } }",
+      "prediction": "$$s + t + u = - \\frac{8}{\\alpha'}$$",
+      "cer": 0.42857142857142855,
+      "exact_match": 0
+    },
+    {
+      "idx": 6,
+      "target": "m _ { \\phi _ { 0 } } ^ { 2 } \\sim { \\frac { m ^ { 2 } v ^ { 2 } } { \\Lambda ^ { 2 } } } .",
+      "prediction": "$$m _ { \\phi _ { 0 } } ^ { 2 } \\sim \\frac { m ^ { 2 } v ^ { 2 } } { \\Lambda ^ { 2 } } .$$",
+      "cer": 0.07865168539325842,
+      "exact_match": 0
+    },
+    {
+      "idx": 7,
+      "target": "( \\partial b ) ^ { * } = - q ^ { 2 } ( D ^ { - 1 } ) \\left( - q ^ { 3 } c d ( \\partial a ) + q a d ( \\partial c ) + q ^ { 2 } c ^ { 2 } ( \\partial b ) - a c ( \\partial d ) \\right) ,",
+      "prediction": " $$( \\partial b ) ^ { * } = - q ^ { 2 } ( D ^ { - 1 } ) \\left( - q ^ { 3 } c d ( \\partial a ) + q a d ( \\partial c ) + q ^ { 2 } c ^ { 2 } ( \\partial b ) - a c ( \\partial d ) \\right) ,$$",
+      "cer": 0.027624309392265192,
+      "exact_match": 0
+    },
+    {
+      "idx": 8,
+      "target": "d _ { k } > \\frac { 9 } { ( k + 2 ) ^ { 2 } } ( \\bar { \\varphi } \\varphi ) _ { 0 } ^ { \\frac { 4 } { 3 } } ( \\bar { F } F ) _ { 0 } ^ { - 1 } d _ { k - 1 } \\ .",
+      "prediction": " $$d _ { k } > \\frac { 9 } { ( k + 2 ) ^ { 2 } } ( \\bar { \\varphi } \\varphi ) _ { 0 } ^ { \\frac { 4 } { 3 } } ( \\bar { F } F ) _ { 0 } ^ { - 1 } d _ { k - 1 } \\, .$$",
+      "cer": 0.03773584905660377,
+      "exact_match": 0
+    },
+    {
+      "idx": 9,
+      "target": "\\varepsilon ^ { \\mu \\nu \\alpha \\beta } \\partial _ { \\nu } B _ { \\alpha \\beta } = 0 .",
+      "prediction": " $$\\varepsilon ^ { \\mu \\nu \\alpha \\beta } \\partial _ { \\nu } B _ { \\alpha \\beta } = 0 .$$",
+      "cer": 0.05952380952380952,
+      "exact_match": 0
+    },
+    {
+      "idx": 10,
+      "target": "\\mathrm { I ) } \\quad { \\cal L } = \\partial _ { z } \\varphi \\partial _ { \\bar { z } } \\varphi - 4 \\varphi ^ { 2 } + 2 \\varphi ^ { 4 } \\quad \\mathrm { a n d } \\quad \\mathrm { I I ) } \\quad { \\cal L } = \\partial _ { z } \\varphi \\partial _ { \\bar { z } } \\varphi + 2 \\varphi ^ { 2 } - 2 \\varphi ^ { 4 } .",
+      "prediction": "$$\\text { I) } \\quad \\mathcal { L } = \\partial _ { z } \\varphi \\partial _ { \\bar { z } } \\varphi - 4 \\varphi ^ { 2 } + 2 \\varphi ^ { 4 } \\quad \\text { and } \\quad \\text { II) } \\quad \\mathcal { L } = \\partial _ { z } \\varphi \\partial _ { \\bar { z } } \\varphi + 2 \\varphi ^ { 2 } - 2 \\varphi ^ { 4 } .$$",
+      "cer": 0.12292358803986711,
+      "exact_match": 0
+    },
+    {
+      "idx": 11,
+      "target": "{ \\cal W } \\equiv { \\frac { 1 } { 4 \\rho ^ { 2 } } } \\Big [ \\cosh ( 2 \\varphi _ { 2 } ) ( \\rho ^ { 6 } - 2 ) - ( 3 \\rho ^ { 6 } + 2 ) \\Big ] , \\qquad \\rho \\equiv e ^ { { \\frac { 1 } { \\sqrt { 6 } } } \\varphi _ { 1 } } .",
+      "prediction": "$$\\mathcal { W } \\equiv \\frac { 1 } { 4 \\rho ^ { 2 } } \\left[ \\cosh ( 2 \\varphi _ { 2 } ) ( \\rho ^ { 6 } - 2 ) - ( 3 \\rho ^ { 6 } + 2 ) \\right] , \\qquad \\rho \\equiv e ^ { \\frac { 1 } { \\sqrt { 6 } } \\varphi _ { 1 } } .$$",
+      "cer": 0.1141552511415525,
+      "exact_match": 0
+    },
+    {
+      "idx": 12,
+      "target": "\\zeta _ { \\mathrm { f r } } ( K , P ) = \\omega ( K , P ) t - { \\bf k } ( { \\bf x } - { \\bf y } ) - { \\bf p } ( { \\bf x }",
+      "prediction": " $$\\zeta _ { \\mathrm { f } } ( K , P ) = \\omega ( K , P ) t - k ( x - y ) - p ( x )$$",
+      "cer": 0.375,
+      "exact_match": 0
+    },
+    {
+      "idx": 13,
+      "target": "d s ^ { 2 } = \\frac { 1 } { 4 \\lambda ^ { 2 } } t a n h ^ { 2 } ( \\lambda y ) d \\theta ^ { 2 } + d y ^ { 2 }",
+      "prediction": " $$d s ^ { 2 } = \\frac { 1 } { 4 \\lambda ^ { 2 } } t a n h ^ { 2 } ( \\lambda y ) d \\theta ^ { 2 } + d y ^ { 2 }$$",
+      "cer": 0.046296296296296294,
+      "exact_match": 0
+    },
+    {
+      "idx": 14,
+      "target": "\\sigma ( 0 ) = \\frac { 8 T \\sqrt { 2 \\mu } } { b } = \\sqrt { \\frac { 8 g ^ { 2 } \\zeta } { \\pi ^ { 2 } } } = \\sigma _ { 0 } ,",
+      "prediction": " $$\\sigma ( 0 ) = \\frac { 8 T \\sqrt { 2 \\mu } } { b } = \\sqrt { \\frac { 8 g ^ { 2 } \\zeta } { \\pi ^ { 2 } } } = \\sigma _ { 0 } ,$$",
+      "cer": 0.04,
+      "exact_match": 0
+    },
+    {
+      "idx": 15,
+      "target": "\\varepsilon _ { 0 } ^ { \\beta \\rightarrow 0 } = A + B + C",
+      "prediction": " $$\\varepsilon _ { 0 } ^ { \\beta \\to 0 } = A + B + C$$",
+      "cer": 0.22807017543859648,
+      "exact_match": 0
+    },
+    {
+      "idx": 16,
+      "target": "N _ { n } ( x ) = - \\frac { \\prod _ { i = 1 } ^ { n } \\nu _ { i } } { ( n - 3 ) ! } \\left. \\partial _ { a } ^ { ( n - 3 ) } a ^ { \\frac { 1 } { 2 } ( x + n - 4 ) } \\right| _ { a = 1 } .",
+      "prediction": " $$N _ { n } ( x ) = - \\frac { \\prod _ { i = 1 } ^ { n } \\nu _ { i } } { ( n - 3 ) ! } \\, \\partial _ { a } ^ { ( n - 3 ) } a ^ { \\frac { 1 } { 2 } } ( x + n - 4 ) \\bigg | _ { a = 1 } .$$",
+      "cer": 0.0918918918918919,
+      "exact_match": 0
+    },
+    {
+      "idx": 17,
+      "target": "\\Phi = R ^ { 3 } ( t ) \\chi ( t ) = \\varepsilon ^ { \\mu \\nu \\alpha \\beta } \\varepsilon _ { a b c d } \\partial _ { \\mu } \\varphi _ { a } \\partial _ { \\nu } \\varphi _ { b } \\partial _ { \\alpha } \\varphi _ { c } \\partial _ { \\beta } \\varphi _ { d }",
+      "prediction": " $$\\Phi = R ^ { 3 } ( t ) \\chi ( t ) = e ^ { \\mu \\nu \\alpha \\beta } \\varepsilon _ { a b c d } \\partial _ { \\mu } \\varphi _ { a } \\partial _ { \\nu } \\varphi _ { b } \\partial _ { \\alpha } \\varphi _ { c } \\partial _ { \\beta } \\varphi _ { d }$$",
+      "cer": 0.061224489795918366,
+      "exact_match": 0
+    },
+    {
+      "idx": 18,
+      "target": "E = { \\frac { 1 } { 2 i } } \\int _ { - \\infty } ^ { \\infty } { \\frac { d \\omega } { 2 \\pi } } e ^ { - i \\omega \\tau } \\sum _ { l = 1 } ^ { \\infty } ( 2 l + 1 ) \\int _ { 0 } ^ { \\infty } r ^ { 2 } d r 2 k ^ { 2 } [ F _ { l } ( r , r ) + G _ { l } ( r , r ) ] .",
+      "prediction": " $$E = \\frac { 1 } { 2 i } \\int _ { - \\infty } ^ { \\infty } \\frac { d \\omega } { 2 \\pi } e ^ { - i \\omega \\tau } \\sum _ { l = 1 } ^ { \\infty } ( 2 l + 1 ) \\int _ { 0 } ^ { \\infty } r ^ { 2 } d r 2 k ^ { 2 } [ F _ { l } ( r , r ) + G _ { l } ( r , r ) ] .$$",
+      "cer": 0.05019305019305019,
+      "exact_match": 0
+    },
+    {
+      "idx": 19,
+      "target": "\\mathcal { R } _ { a } \\equiv ( R _ { a b } - \\frac { 1 } { 2 ( n - 1 ) } \\eta _ { a b } R ) \\mathbf { e } ^ { b }",
+      "prediction": " $${ \\mathcal { R } } _ { a } \\equiv \\left( R _ { a b } - \\frac { 1 } { 2 ( n - 1 ) } \\eta _ { a b } R \\right) \\mathrm { e } ^ { b }$$",
+      "cer": 0.19298245614035087,
+      "exact_match": 0
+    },
+    {
+      "idx": 20,
+      "target": "E _ { n } = \\left( n + \\frac { 1 } { 2 } \\right) \\omega ,",
+      "prediction": " $$E _ { n } = \\left( n + \\frac { 1 } { 2 } \\right) \\omega ,$$",
+      "cer": 0.08771929824561403,
+      "exact_match": 0
+    },
+    {
+      "idx": 21,
+      "target": "\\mathrm { K } = \\mathrm { \\^ { K } } ( M ^ { a } , M ^ { a * } ) + \\mathrm { { K } } ( M ^ { a } , M ^ { a * } ) _ { \\alpha \\beta } T r ( \\Phi ^ { \\alpha * } \\Phi ^ { \\beta } ) + . . . ,",
+      "prediction": " $$\\mathbf { K } = \\hat { K } ( M ^ { a } , M ^ { a ^ { * } } ) + K ( M ^ { a } , M ^ { a ^ { * } } ) _ { \\alpha \\beta } T r ( \\Phi ^ { \\alpha ^ { * } } \\Phi ^ { \\beta } ) + \\cdots ,$$",
+      "cer": 0.2849462365591398,
+      "exact_match": 0
+    },
+    {
+      "idx": 22,
+      "target": "h _ { \\mu \\nu } ^ { c o m p } = \\sum _ { n } \\tilde { h } _ { \\mu \\nu } ( \\tilde { x } ^ { 0 } , \\tilde { x } ^ { i } , \\tilde { x } ^ { 1 0 } + 2 \\pi n R _ { s } ) .",
+      "prediction": " $$h _ { \\mu \\nu } ^ { \\mathrm { c o m p } } = \\sum _ { n } \\tilde { h } _ { \\mu \\nu } ( \\vec { x } ^ { 0 } , \\vec { x } ^ { i } , \\vec { x } ^ { 1 0 } + 2 \\pi n R _ { s } ) .$$",
+      "cer": 0.1927710843373494,
+      "exact_match": 0
+    },
+    {
+      "idx": 23,
+      "target": "z ^ { 2 } - \\omega _ { 0 } ^ { 2 } - 2 \\pi \\overline { { G } } ( z ) + 2 \\pi i r ( z ) = 0 .",
+      "prediction": "$$z^{2}-\\omega_{0}^{2}-2\\pi \\overline { G } ( z ) +2\\pi i r ( z ) =0.$$",
+      "cer": 0.31521739130434784,
+      "exact_match": 0
+    },
+    {
+      "idx": 24,
+      "target": "\\widetilde \\Psi _ { \\xi } ^ { \\prime } \\ = \\ ( \\cosh V _ { \\xi } ^ { \\prime } ) ( \\cosh V _ { \\xi } ) ^ { - 1 } \\widetilde \\Psi _ { \\xi } \\ .",
+      "prediction": " $$\\widetilde { \\Psi } _ { \\xi } ^ { \\prime } = ( \\cosh V _ { \\xi } ^ { \\prime } ) ( \\cosh V _ { \\xi } ) ^ { - 1 } \\widetilde { \\Psi } _ { \\xi } \\, .$$",
+      "cer": 0.1276595744680851,
+      "exact_match": 0
+    },
+    {
+      "idx": 25,
+      "target": "\\mathrm { e x p } \\left[ ( { \\bf k } _ { i } \\times { \\bar { \\bf k } } _ { j } ) \\sigma _ { i j } \\right] = \\mathrm { e x p } \\left[ - { \\frac { i } { 2 } } \\Theta ^ { \\mu \\nu } p _ { \\mu } ^ { i } p _ { \\nu } ^ { j } \\sigma _ { i j } \\right] \\quad .",
+      "prediction": " $$\\exp \\left[ ( \\mathbf { k } _ { i } \\times \\bar { \\mathbf { k } } _ { j } ) \\sigma _ { i j } \\right] = \\exp \\left[ - \\frac { i } { 2 } \\Theta ^ { \\mu \\nu } p _ { \\mu } ^ { i } p _ { \\nu } ^ { j } \\sigma _ { i j } \\right] \\ .$$",
+      "cer": 0.208,
+      "exact_match": 0
+    },
+    {
+      "idx": 26,
+      "target": "d \\tilde { K } _ { 7 } = - { \\frac { 1 } { 2 } } K _ { 4 } { } ^ { 2 } + ( 2 \\pi ) ^ { 4 } { \\tilde { \\beta } } ^ { \\prime } { \\tilde { X } } _ { 8 } \\ ,",
+      "prediction": " $$d \\tilde { K } _ { 7 } = - \\frac { 1 } { 2 } K _ { 4 } ^ { 2 } + ( 2 \\pi ) ^ { 4 } \\bar { \\beta } ^ { \\prime } \\tilde { X } _ { 8 } \\, ,$$",
+      "cer": 0.17647058823529413,
+      "exact_match": 0
+    },
+    {
+      "idx": 27,
+      "target": "Z _ { 1 } ^ { c ^ { 2 } } ( s ; 1 , a ) = \\sum _ { n = 1 } ^ { + \\infty } \\left[ c ^ { 2 } + ( n + a ) ^ { 2 } \\right] ^ { - s } ,",
+      "prediction": " $$Z _ { 1 } ^ { c ^ { 2 } } ( s ; 1 , a ) = \\sum _ { n = 1 } ^ { + \\infty } [ c ^ { 2 } + ( n + a ) ^ { 2 } ] ^ { - s } ,$$",
+      "cer": 0.12307692307692308,
+      "exact_match": 0
+    },
+    {
+      "idx": 28,
+      "target": "2 M = \\frac { 1 - k ^ { 2 } - 2 l } { 1 + k ^ { 2 } } \\rho _ { 0 } , \\beta = 1 , \\gamma = 1 + \\frac { 2 l \\rho _ { 0 } } { ( 1 + k ^ { 2 } ) M } .",
+      "prediction": " $$2 M = \\frac { 1 - k ^ { 2 } - 2 l } { 1 + k ^ { 2 } } \\rho _ { 0 } , \\beta = 1 , \\gamma = 1 + \\frac { 2 l \\rho _ { 0 } } { ( 1 + k ^ { 2 } ) M } .$$",
+      "cer": 0.03424657534246575,
+      "exact_match": 0
+    },
+    {
+      "idx": 29,
+      "target": "V ( \\phi ) = - { \\frac { 2 k } { 2 k + 1 } } ( { \\frac { 2 k } { a } } ) ^ { \\frac { 1 } { 2 k } } \\phi ^ { 1 + 1 / 2 k } - R _ { 0 } \\phi + c",
+      "prediction": " $$V ( \\phi ) = - { \\frac { 2 k } { 2 k + 1 } } ( { \\frac { 2 k } { a } } ) ^ { { \\frac { 1 } { 2 k } } } \\phi ^ { 1 + 1 / 2 k } - R _ { 0 } \\phi + c$$",
+      "cer": 0.06338028169014084,
+      "exact_match": 0
+    },
+    {
+      "idx": 30,
+      "target": "\\left\\{ \\begin{array} { l l } { 1 \\leq \\rho \\leq \\frac { g - 2 } { 2 } , \\quad 1 \\leq y \\leq | \\tilde { G } | , } & { \\quad \\mathrm { g e v e n } , } \\\\ { 1 \\leq \\rho \\leq g - 2 , \\quad 1 \\leq y \\leq \\frac { g - 1 } { 2 } , } & { \\quad \\mathrm { G = A _ { g - 1 } , g o d d , } } \\\\ \\end{array} \\right.",
+      "prediction": " $$\\left\\{ \\begin{array} { l l } { 1 \\leq \\rho \\leq \\frac { g - 2 } { 2 } , \\quad 1 \\leq y \\leq | \\tilde { G } | , } & { \\mathrm { g e v e n , } } \\\\ { 1 \\leq \\rho \\leq g - 2 , \\quad 1 \\leq y \\leq \\frac { g - 1 } { 2 } , } & { G = A _ { g - 1 } , \\mathrm { g o d d } , } \\end{array} \\right.$$",
+      "cer": 0.1423841059602649,
+      "exact_match": 0
+    },
+    {
+      "idx": 31,
+      "target": "E _ { e f f ( 3 + 1 ) } = - \\frac { B _ { m } } { 2 \\pi ^ { 2 } } \\int _ { 0 } ^ { + \\infty } y \\ln \\left( \\frac { y ^ { 2 } + m _ { f } ^ { 2 } / B _ { m } } { m _ { f } ^ { 2 } / B _ { m } } \\right) \\left( G ( y , B _ { m } d ^ { 2 } ) - c \\right) d y",
+      "prediction": " $$E _ { e f f ( 3 + 1 ) } = - \\frac { B _ { m } } { 2 \\pi ^ { 2 } } \\int _ { 0 } ^ { + \\infty } y \\ln \\left( \\frac { y ^ { 2 } + m _ { f } ^ { 2 } / B _ { m } } { m _ { f } ^ { 2 } / B _ { m } } \\right ) \\left( G ( y , B _ { m } d ^ { 2 } ) - c \\right) d y$$",
+      "cer": 0.023715415019762844,
+      "exact_match": 0
+    },
+    {
+      "idx": 32,
+      "target": "y ^ { \\delta } \\tilde { \\Gamma } ^ { \\alpha } { } _ { \\beta \\delta } \\tilde { B } ^ { \\beta } | _ { 1 } = y ^ { \\delta } ( \\Gamma ^ { \\alpha } { } _ { \\beta \\delta } + \\Gamma ^ { \\alpha } { } _ { \\beta \\delta , \\sigma } x ^ { \\sigma } / 2 ) [ B ^ { \\beta } + ( B ^ { \\beta } { } _ { , \\sigma } + \\Gamma ^ { \\beta } { } _ { \\sigma \\tau } B ^ { \\tau } ) d ^ { \\sigma } / 2 ]",
+      "prediction": " $$y ^ { \\delta } \\hat { \\Gamma } _ { \\beta \\delta } ^ { \\alpha } \\bar { B } ^ { \\beta } | _ { 1 } = y ^ { \\delta } ( \\Gamma _ { \\beta \\delta } ^ { \\alpha } + \\Gamma _ { \\beta , \\sigma } ^ { \\alpha } x ^ { \\sigma } / 2 ) [ B ^ { \\beta } + ( B ^ { \\beta } , \\sigma + \\Gamma _ { \\sigma \\tau } ^ { \\beta } B ^ { \\tau } ) d ^ { \\sigma } / 2 ]$$",
+      "cer": 0.3010752688172043,
+      "exact_match": 0
+    },
+    {
+      "idx": 33,
+      "target": "\\left\\vert E , p _ { 1 } ^ { \\mathrm { m i n } } , \\ldots , p _ { N - 1 } ^ { \\mathrm { m i n } } \\right> = \\left\\vert \\begin{array} { c } { E , \\left[ 0 \\right] } \\\\ { \\left[ q \\right] } \\\\ \\end{array} \\right> = \\left\\vert \\begin{array} { c } { E , 0 , \\ldots , 0 } \\\\ { q _ { 1 } , \\ldots , q _ { k } , \\ldots , q _ { N } } \\\\ \\end{array} \\right> .",
+      "prediction": " $$\\left| E , p _ { 1 } ^ { \\min } , \\ldots , p _ { N - 1 } ^ { \\min } \\right\\rangle = \\left| E _ { z } [ 0 ] \\right\\rangle = \\left| \\begin{array} { c } { { E , 0 , \\ldots , 0 } } \\\\ { { q _ { 1 } , \\ldots , q _ { k } , \\ldots , q _ { N } } } \\end{array} \\right\\rangle .$$",
+      "cer": 0.38285714285714284,
+      "exact_match": 0
+    },
+    {
+      "idx": 34,
+      "target": "\\hat { x } _ { 1 } = \\lambda _ { 1 } + \\frac { \\theta } { 2 } ( \\partial _ { \\lambda _ { 1 } } + i \\partial _ { \\lambda _ { 2 } } ) \\quad , \\quad \\hat { x } _ { 2 } = \\lambda _ { 2 } + \\frac { \\theta } { 2 } ( \\partial _ { \\lambda _ { 2 } } - i \\partial _ { \\lambda _ { 1 } } ) \\quad ,",
+      "prediction": "$$\\hat { x } _ { 1 } = \\lambda _ { 1 } + \\frac { \\theta } { 2 } ( \\partial _ { \\lambda _ { 1 } } + i \\partial _ { \\lambda _ { 2 } } ) \\ , \\ \\ \\hat { x } _ { 2 } = \\lambda _ { 2 } + \\frac { \\theta } { 2 } ( \\partial _ { \\lambda _ { 2 } } - i \\partial _ { \\lambda _ { 1 } } ) \\ ,$$",
+      "cer": 0.056140350877192984,
+      "exact_match": 0
+    },
+    {
+      "idx": 35,
+      "target": "R ( u _ { 1 } , u _ { 2 } , u _ { 3 } ) _ { i _ { 1 } i _ { 2 } i _ { 3 } } ^ { j _ { 1 } j _ { 2 } j _ { 3 } } \\stackrel { \\rho } { = } R ( ( \\omega u _ { 2 } ) ^ { - 1 } , u _ { 1 } , ( \\omega u _ { 3 } ) ^ { - 1 } ) _ { - j _ { 2 } i _ { 1 } - i _ { 3 } } ^ { - i _ { 2 } j _ { 1 } - j _ { 3 } } .",
+      "prediction": "$$R ( u _ { 1 } , u _ { 2 } , u _ { 3 } ) _ { i _ { 1 } i _ { 2 } i _ { 3 } } ^ { j _ { 1 } j _ { 2 } j _ { 3 } } \\stackrel { \\rho } { = } R ( ( \\omega u _ { 2 } ) ^ { - 1 } , u _ { 1 } , ( \\omega u _ { 3 } ) ^ { - 1 } ) _ { - j _ { 2 } i _ { 1 } - i _ { 3 } } ^ { - i _ { 2 } j _ { 1 } - j _ { 3 } } .$$",
+      "cer": 0.013333333333333334,
+      "exact_match": 0
+    },
+    {
+      "idx": 36,
+      "target": "W _ { f i } [ K ] = \\frac { 1 } { \\sqrt { 2 \\pi \\hbar } } \\exp \\left\\{ - \\frac { i } { \\hbar } \\left( p _ { f } q _ { i } + \\sum _ { j = 1 } ^ { N } \\epsilon H ( p _ { f } - \\epsilon K _ { j - 1 } - \\sum _ { l = 1 } ^ { j } \\epsilon J _ { l } ) \\right) \\right\\} .",
+      "prediction": " $$W _ { f i } [ K ] = \\frac { 1 } { \\sqrt { 2 \\pi \\hbar } } \\exp \\left\\{ - \\frac { i } { \\hbar } \\left( p _ { f } q _ { i } + \\sum _ { j = 1 } ^ { N } \\epsilon H ( p _ { f } - \\epsilon K _ { j - 1 } - \\sum _ { l = 1 } ^ { j } \\epsilon J _ { l } ) \\right) \\right\\} .$$",
+      "cer": 0.019011406844106463,
+      "exact_match": 0
+    },
+    {
+      "idx": 37,
+      "target": "\\hat { \\alpha } ( Q ) = \\sqrt { { \\frac { 3 + 4 Q ^ { 2 } } { 4 ( 1 + Q ^ { 2 } ) } } } \\ ,",
+      "prediction": " $${ \\hat { \\alpha } } ( Q ) = \\sqrt { \\frac { 3 + 4 Q ^ { 2 } } { 4 ( 1 + Q ^ { 2 } ) } } ,$$",
+      "cer": 0.15384615384615385,
+      "exact_match": 0
+    },
+    {
+      "idx": 38,
+      "target": "\\psi _ { A } ( \\bar { D } ^ { 2 } \\phi ) _ { A } + \\psi _ { A } ( \\bar { D } _ { \\mu A E } ( A _ { \\mu B } f _ { E B C } \\phi _ { C } ) ) + \\psi _ { A } f _ { A a B } A _ { \\mu B } \\phi _ { C } f _ { C a D } A _ { \\mu D }",
+      "prediction": "$$\\psi _ { A } ( \\bar { D } ^ { 2 } \\phi ) _ { A } + \\psi _ { A } ( \\bar { D } _ { \\mu A E } ( A _ { \\mu B } f _ { E B C } \\phi C ) ) + \\psi _ { A } f _ { a a B } A _ { \\mu B } \\phi C \\bar { f } _ { C a D } A _ { \\mu D }$$",
+      "cer": 0.08597285067873303,
+      "exact_match": 0
+    },
+    {
+      "idx": 39,
+      "target": "L _ { \\mu a } = - e \\varepsilon _ { a b } D _ { \\mu } \\phi _ { b } \\ ,",
+      "prediction": " $$L _ { \\mu a } = - e \\varepsilon _ { a b } D _ { \\mu } \\phi _ { b } \\, ,$$",
+      "cer": 0.08571428571428572,
+      "exact_match": 0
+    },
+    {
+      "idx": 40,
+      "target": "{ \\delta } \\ddot { \\phi } + 3 [ 3 { H _ { 0 } } ^ { 2 } - 4 { \\pi } { \\rho } _ { 0 } ] { \\delta } { \\phi } = \\frac { 8 { \\pi } } { 3 } { \\delta } { \\rho } + \\frac { 1 6 { \\pi } ^ { 2 } } { { \\phi } _ { 0 } } { \\delta } { { \\sigma } ^ { 2 } }",
+      "prediction": "$$\\delta \\phi + 3[3H_0^2 - 4\\pi \\rho_0]\\delta \\phi = \\frac{8\\pi}{3}\\delta \\rho + \\frac{16\\pi^2}{\\phi_0}\\delta \\sigma^2$$",
+      "cer": 0.5186721991701245,
+      "exact_match": 0
+    },
+    {
+      "idx": 41,
+      "target": "w ^ { { \\dot { \\alpha } } } \\nabla _ { { \\dot { \\alpha } } t } \\Psi ^ { { \\cal S D } } ( w ) = 0",
+      "prediction": " $$w ^ { \\dot { \\alpha } } \\nabla _ { \\dot { \\alpha } t } \\Psi ^ { S D } ( w ) = 0$$",
+      "cer": 0.22916666666666666,
+      "exact_match": 0
+    },
+    {
+      "idx": 42,
+      "target": "\\alpha N _ { f } = \\alpha ( \\sum _ { I = 1 } ^ { 9 } v _ { I } \\gamma _ { I } + \\sum _ { i = 1 } ^ { 3 } \\frac { i \\mu x ^ { i } } { 4 } \\{ \\gamma _ { i } , \\gamma _ { 1 2 3 } \\} ) + \\alpha ^ { 2 } \\mu ^ { 2 } / 4 ^ { 2 }",
+      "prediction": " $$\\alpha N _ { f } = \\alpha ( \\sum _ { I = 1 } ^ { 9 } v _ { I } \\gamma _ { I } + \\sum _ { i = 1 } ^ { 3 } \\frac { i \\mu x ^ { i } } { 4 } \\{ \\gamma _ { i } , \\gamma _ { 1 2 3 } \\} ) + \\alpha ^ { 2 } \\mu ^ { 2 } / 4 ^ { 2 }$$",
+      "cer": 0.02262443438914027,
+      "exact_match": 0
+    },
+    {
+      "idx": 43,
+      "target": "S [ \\phi ] = \\int d ^ { 4 } x ^ { \\mu } { \\cal L } _ { 0 } ( \\phi , \\partial _ { \\mu } \\phi ) \\ ,",
+      "prediction": " $$S [ \\phi ] = \\int d ^ { 4 } x ^ { \\mu } { \\cal L } _ { 0 } ( \\phi , \\partial _ { \\mu } \\phi ) \\, ,$$",
+      "cer": 0.061855670103092786,
+      "exact_match": 0
+    },
+    {
+      "idx": 44,
+      "target": "T _ { 1 2 } = T _ { 2 2 } = T _ { 3 2 } = T _ { 4 2 } = 0",
+      "prediction": " $$T _ { 1 2 } = T _ { 2 2 } = T _ { 3 2 } = T _ { 4 2 } = 0$$",
+      "cer": 0.08771929824561403,
+      "exact_match": 0
+    },
+    {
+      "idx": 45,
+      "target": "\\epsilon _ { \\mathrm { m } } = { \\frac { 8 k ^ { 2 } } { \\ell _ { 0 } ^ { 2 } } } B _ { 1 } - k ^ { 2 } \\eta ^ { 2 } B _ { 2 } .",
+      "prediction": " $$\\epsilon _ { \\mathrm { m } } = \\frac { 8 k ^ { 2 } } { \\ell _ { 0 } ^ { 2 } } B _ { 1 } - k ^ { 2 } \\eta ^ { 2 } B _ { 2 } .$$",
+      "cer": 0.0703125,
+      "exact_match": 0
+    },
+    {
+      "idx": 46,
+      "target": "G _ { a b } = \\frac { \\partial ^ { 2 } } { \\partial \\xi ^ { a } \\partial \\xi ^ { b } } \\log \\left( \\kappa _ { c d e } \\xi ^ { c } \\xi ^ { d } \\xi ^ { e } \\right) .",
+      "prediction": " $$G _ { a b } = \\frac { \\partial ^ { 2 } } { \\partial \\xi ^ { a } \\partial \\xi ^ { b } } \\log \\left( \\kappa _ { c d e } \\xi ^ { c } \\xi ^ { d } \\xi ^ { e } \\right) .$$",
+      "cer": 0.03067484662576687,
+      "exact_match": 0
+    },
+    {
+      "idx": 47,
+      "target": "P _ { C } ( x _ { 1 } , x _ { 2 } ) \\mathop \\to _ { \\Omega ( x ) } \\Omega ( x _ { 1 } ) P _ { \\ell } ( x _ { 1 } , x _ { 2 } ) \\Omega ^ { \\dagger } ( x _ { 2 } )",
+      "prediction": " $$P _ { C } ( x _ { 1 } , x _ { 2 } ) \\to \\frac { \\Omega ( x _ { 1 } ) } { \\Omega ( x ) } P _ { \\ell } ( x _ { 1 } , x _ { 2 } ) \\Omega ^ { \\dagger } ( x _ { 2 } )$$",
+      "cer": 0.18633540372670807,
+      "exact_match": 0
+    },
+    {
+      "idx": 48,
+      "target": "f ( x ) \\ast g ( x ) = \\exp \\left. \\left( \\frac { i } { 2 } \\theta ^ { i j } \\frac { \\partial } { \\partial \\xi ^ { i } } \\frac { \\partial } { \\partial \\zeta ^ { j } } \\right) f ( x + \\xi ) g ( x + \\zeta ) \\right| _ { \\xi = \\zeta = 0 } ,",
+      "prediction": "$$f ( x ) * g ( x ) = \\exp \\left( \\frac { i } { 2 } \\theta ^ { i j } \\frac { \\partial } { \\partial \\xi ^ { i } } \\frac { \\partial } { \\partial \\zeta ^ { j } } \\right) f ( x + \\xi ) g ( x + \\zeta ) \\Big| _ { \\xi = \\zeta = 0 } ,$$",
+      "cer": 0.07627118644067797,
+      "exact_match": 0
+    },
+    {
+      "idx": 49,
+      "target": "t ( \\nu ) q ( \\nu ) = a ^ { N } q ( \\nu + 2 i \\eta ) + b ^ { N } q ( \\nu - 2 i \\eta ) .",
+      "prediction": " $$t ( \\nu ) q ( \\nu ) = a ^ { N } q ( \\nu + 2 i \\eta ) + b ^ { N } q ( \\nu - 2 i \\eta ) .$$",
+      "cer": 0.05747126436781609,
+      "exact_match": 0
+    },
+    {
+      "idx": 50,
+      "target": "< \\alpha \\vert \\beta > = t r ( \\alpha ^ { * } \\beta ) .",
+      "prediction": " $$< \\alpha | \\beta > = t r ( \\alpha ^ { * } \\beta ) .$$",
+      "cer": 0.18181818181818182,
+      "exact_match": 0
+    },
+    {
+      "idx": 51,
+      "target": "\\frac { \\partial \\sigma } { \\partial \\tau } + \\frac { \\partial } { \\partial \\theta } ( \\sigma s ) = 0 ,",
+      "prediction": " $$\\frac { \\partial \\sigma } { \\partial \\tau } + \\frac { \\partial } { \\partial \\theta } ( \\sigma s ) = 0 ,$$",
+      "cer": 0.04854368932038835,
+      "exact_match": 0
+    },
+    {
+      "idx": 52,
+      "target": "\\overline { { { \\cal Y } ^ { \\alpha } } } ( { \\bf r } ) = { \\textstyle \\frac { \\partial _ { j } } { \\partial ^ { 2 } } \\overline { { { \\cal A } _ { j } ^ { \\alpha } } } ( { \\bf r } ) } ,",
+      "prediction": " $$\\overline { { { y } } } ^ { \\alpha } ( \\mathbf { r } ) = \\frac { \\partial _ { i } } { \\partial ^ { 2 } } \\overline { { { A } } } _ { j } ^ { \\alpha } ( \\mathbf { r } ) ,$$",
+      "cer": 0.26881720430107525,
+      "exact_match": 0
+    },
+    {
+      "idx": 53,
+      "target": "f _ { 2 } = - \\frac { \\sqrt { 2 } } { 3 } \\phi + \\frac { \\sqrt { 2 } } { 3 } \\psi _ { 1 } - \\frac { 2 \\sqrt { 2 } } { 3 } \\psi \\ , \\ f = \\sqrt { 2 } ( \\psi - \\phi ) ,",
+      "prediction": " $$f _ { 2 } = - \\frac { \\sqrt { 2 } } { 3 } \\phi + \\frac { \\sqrt { 2 } } { 3 } \\psi _ { 1 } - \\frac { 2 \\sqrt { 2 } } { 3 } \\psi \\ , \\ f = \\sqrt { 2 } ( \\psi - \\phi ) ,$$",
+      "cer": 0.030120481927710843,
+      "exact_match": 0
+    },
+    {
+      "idx": 54,
+      "target": "c = { \\frac { i ( - z _ { \\infty } ) ^ { ( k + l ) / N } } { 2 } } { \\frac { \\Gamma ( ( k + l ) / N ) v } { \\sin ( k l \\pi / N ) \\Gamma ( k / N ) \\Gamma ( l / N ) } } .",
+      "prediction": "$$c = \\frac{i(-z_{\\infty})^{(k+l)/N}}{2} \\frac{\\Gamma((k+l)/N)v}{\\sin(kl\\pi/N)\\Gamma(k/N)\\Gamma(l/N)}.$$",
+      "cer": 0.4226190476190476,
+      "exact_match": 0
+    },
+    {
+      "idx": 55,
+      "target": "\\Xi \\left( \\theta \\right) = Q _ { \\alpha } ^ { k } \\theta _ { k } ^ { \\alpha } ,",
+      "prediction": "$$\\Xi ( \\theta ) = Q _ { \\alpha } ^ { k } \\theta _ { k } ^ { \\alpha } ,$$",
+      "cer": 0.1875,
+      "exact_match": 0
+    },
+    {
+      "idx": 56,
+      "target": "\\lambda _ { + } ( x ) = - i \\sqrt { { \\frac { \\pi } { L } } } \\sum _ { n = 1 } ^ { \\infty } { \\frac { 1 } { \\sqrt { p _ { - } ( n ) } } } \\left( C ( n ) e ^ { - i p ( n ) x } + C ^ { * } ( n ) e ^ { i p ( n ) x } \\right)",
+      "prediction": " $$\\lambda _ { + } ( x ) = - i \\sqrt { \\frac { \\pi } { L } } \\sum _ { n = 1 } ^ { \\infty } \\frac { 1 } { \\sqrt { p - ( n ) } } \\left( C ( n ) e ^ { - i p ( n ) x } + C ^ { * } ( n ) e ^ { i p ( n ) x } \\right)$$",
+      "cer": 0.08636363636363636,
+      "exact_match": 0
+    },
+    {
+      "idx": 57,
+      "target": "\\Phi _ { A } = \\phi _ { A } + i \\psi _ { A \\alpha } \\theta _ { \\alpha } + f _ { A } \\theta ^ { 2 }",
+      "prediction": " $$\\Phi _ { A } = \\phi _ { A } + i \\psi _ { A \\alpha } \\theta _ { \\alpha } + f _ { A } \\theta ^ { 2 }$$",
+      "cer": 0.05102040816326531,
+      "exact_match": 0
+    },
+    {
+      "idx": 58,
+      "target": "Z = \\int D \\bar { \\Psi } D \\Psi e ^ { - S } ,",
+      "prediction": " $$Z = \\int D \\bar { \\Psi } D \\Psi e ^ { - S } ,$$",
+      "cer": 0.1111111111111111,
+      "exact_match": 0
+    },
+    {
+      "idx": 59,
+      "target": "K = \\frac { \\pi ^ { 2 } \\Gamma ( \\frac { \\Delta _ { 1 } + \\ldots + \\Delta _ { 4 } } { 2 } - 2 ) } { 2 \\Gamma ( \\Delta _ { 1 } ) \\ldots \\Gamma ( \\Delta _ { 4 } ) } .",
+      "prediction": " $$K = { \\frac { \\pi ^ { 2 } \\Gamma ( { \\frac { \\Delta _ { 1 } + \\dots + \\Delta _ { 4 } } { 2 } } - 2 ) } { 2 \\Gamma ( \\Delta _ { 1 } ) \\dots \\Gamma ( \\Delta _ { 4 } ) } } .$$",
+      "cer": 0.09146341463414634,
+      "exact_match": 0
+    },
+    {
+      "idx": 60,
+      "target": "< m , \\bar { m } ; \\tilde { \\tau } | \\alpha , \\beta > = \\frac { \\beta - m \\alpha } { \\pi \\tilde { \\tau } \\sqrt { 2 m _ { 2 } } } \\exp ( \\frac { - i } { m _ { 2 } \\tilde { \\tau } } | \\beta - m \\alpha | ^ { 2 } ) .",
+      "prediction": " $$< m , \\vec { m } ; \\vec { r } | \\alpha , \\beta > = \\frac { \\beta - m \\alpha } { \\pi \\vec { r } \\sqrt { 2 m _ { 2 } } } \\exp ( \\frac { - i } { m _ { 2 } \\vec { r } } | \\beta - m \\alpha | ^ { 2 } ) .$$",
+      "cer": 0.1650943396226415,
+      "exact_match": 0
+    },
+    {
+      "idx": 61,
+      "target": "\\hat { G } ( p , k _ { 0 } ) \\propto { \\frac { k _ { 0 } ^ { 2 } h ( b ) ^ { 2 } \\hat { f } ( p ) } { 1 - k _ { 0 } \\hat { f } ( p ) h ^ { \\prime } ( b ) } } .",
+      "prediction": "$$\\hat { G } ( p , k _ { 0 } ) \\propto \\frac { k _ { 0 } ^ { 2 } h ( b ) ^ { 2 } \\hat { f } ( p ) } { 1 - k _ { 0 } \\hat { f } ( p ) h ^ { \\prime } ( b ) } .$$",
+      "cer": 0.0440251572327044,
+      "exact_match": 0
+    },
+    {
+      "idx": 62,
+      "target": "\\Sigma ( p , m ) = \\frac { 1 } { \\pi } \\int _ { - \\infty } ^ { \\infty } \\frac { d w } { \\gamma \\cdotp - w + i \\epsilon } \\Im \\Sigma ( w , m ) ,",
+      "prediction": " $$\\Sigma ( p , m ) = \\frac { 1 } { \\pi } \\int _ { - \\infty } ^ { \\infty } \\frac { d w } { \\gamma - w + i \\epsilon } \\Sigma \\Sigma ( w , m ) ,$$",
+      "cer": 0.11188811188811189,
+      "exact_match": 0
+    },
+    {
+      "idx": 63,
+      "target": "P H P = \\left[ \\begin{array} { r r } { H _ { 1 1 } } & { H _ { 1 2 } } \\\\ { H _ { 2 1 } } & { H _ { 2 2 } } \\\\ \\end{array} \\right] ,",
+      "prediction": " $$P H P = \\left[ \\begin{array} { c c } { { H _ { 1 1 } } } & { { H _ { 1 2 } } } \\\\ { { H _ { 2 1 } } } & { { H _ { 2 2 } } } \\end{array} \\right] ,$$",
+      "cer": 0.17424242424242425,
+      "exact_match": 0
+    },
+    {
+      "idx": 64,
+      "target": "W ( C ) \\sim \\exp [ - \\mu P ( C ) ] ,",
+      "prediction": "$$W ( C ) \\sim \\exp [ - \\mu P ( C ) ] ,$$",
+      "cer": 0.10810810810810811,
+      "exact_match": 0
+    },
+    {
+      "idx": 65,
+      "target": "2 i \\int _ { o } ^ { \\infty } d x | f ( g ; \\tau ; x ) | ^ { 2 } [ I m V ( g , x ) ] = M ( \\nu , \\tau ) \\Lambda ^ { * } ( \\nu , \\tau ) - M ^ { * } ( \\nu , \\tau ) \\Lambda ( \\nu , \\tau ) ,",
+      "prediction": "$$2 i \\int _ { 0 } ^ { \\infty } d x | f ( g ; \\tau ; x ) | ^ { 2 } | I m V ( g , x ) | = M ( \\nu , \\tau ) \\Lambda ^ { * } ( \\nu , \\tau ) - M ^ { * } ( \\nu , \\tau ) \\Lambda ( \\nu , \\tau ) ,$$",
+      "cer": 0.03763440860215054,
+      "exact_match": 0
+    },
+    {
+      "idx": 66,
+      "target": "e _ { [ \\alpha } e _ { \\beta ] } ^ { \\mu } = e _ { \\gamma } ^ { \\mu } I ^ { \\gamma } { } _ { \\alpha \\beta } .",
+      "prediction": " $$e _ { [ \\alpha } e _ { \\beta ] } ^ { \\mu } = e _ { \\gamma } ^ { \\mu } I ^ { \\gamma } _ { \\alpha \\beta } .$$",
+      "cer": 0.08256880733944955,
+      "exact_match": 0
+    },
+    {
+      "idx": 67,
+      "target": "\\tilde { B } _ { \\mu : k } ^ { j } = \\frac { 1 } { ( 1 + | u | ^ { 2 } ) ^ { j + 1 } } \\left\\{ j ( \\partial _ { \\mu } u \\bar { u } - u \\partial _ { \\mu } \\bar { u } ) u ^ { k } - k ( 1 + | u | ^ { 2 } ) u ^ { k - 1 } \\partial _ { \\mu } u \\right\\}",
+      "prediction": "$$\\bar{B}_{\\mu : k}^{j} = \\frac{1}{(1 + | u | ^ { 2 } ) ^ { j + 1 } } \\left\\{ j ( \\partial _ { \\mu } u \\bar{u} - u \\partial _ { \\mu } \\bar{u} ) u ^ { k } - k ( 1 + | u | ^ { 2 } ) u ^ { k - 1 } \\partial _ { \\mu } u \\right\\}$$",
+      "cer": 0.12601626016260162,
+      "exact_match": 0
+    },
+    {
+      "idx": 68,
+      "target": "W _ { \\bf a } = - { \\frac { 1 } { 2 } } \\int _ { \\frac { 4 \\pi \\epsilon } { \\bf a } } ^ { + \\infty } { \\frac { d \\tau } { \\tau } } e ^ { \\tau ^ { 2 } } ( 1 - \\Phi ( \\tau ) ) \\simeq { \\frac { 1 } { 2 } } \\ln ( { \\frac { 4 \\pi \\epsilon } { \\bf a } } ) .",
+      "prediction": "$$W _ { \\mathrm { a } } = - \\frac { 1 } { 2 } \\int _ { \\frac { 4 \\pi \\epsilon } { \\mathrm { a } } } ^ { + \\infty } \\frac { d \\tau } { \\tau } e ^ { \\tau ^ { 2 } } ( 1 - \\Phi ( \\tau ) ) \\simeq \\frac { 1 } { 2 } \\ln ( \\frac { 4 \\pi \\epsilon } { \\mathrm { a } } ) .$$",
+      "cer": 0.17928286852589642,
+      "exact_match": 0
+    },
+    {
+      "idx": 69,
+      "target": "W P ^ { 2 } = - { \\frac { 1 } { 4 \\tau ^ { 2 } } } \\quad \\mathrm { f o r } \\quad \\tau > { \\frac { 1 } { P } } , \\nonumber",
+      "prediction": " $$W P ^ { 2 } = - \\frac { 1 } { 4 \\tau ^ { 2 } } \\quad \\mathrm { f o r } \\quad \\tau > \\frac { 1 } { P } ,$$",
+      "cer": 0.17355371900826447,
+      "exact_match": 0
+    }
+  ]
+}
